@@ -5,7 +5,7 @@ import Login from "./containers/Login/Login";
 
 export default () =>
   <Switch>
-    <Route path="/Home" exact component={Home} />
-    <Route path="/Login" exact component={Login} />
+    <Route path="/Home" component={Home} />
+    <Route path="/Login" component={Login} />
     <Route path="/" component={Login} />
   </Switch>;
