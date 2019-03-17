@@ -5,7 +5,7 @@ import Routes from "./Routes";
 class App extends Component {
   render() {
     return (
-      <div className="App container">
+      <div className="h-100">
         <Routes />
       </div>
     );
