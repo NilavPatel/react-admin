@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Nav } from 'react-bootstrap';
 
-export default class Menus extends Component {
+export default class Menu extends Component {
   render() {
     return (
       <div className="menu-panel">
