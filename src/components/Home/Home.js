@@ -6,17 +6,15 @@ import { Menu, Header, Footer } from '../Layout';
 export default class Home extends Component {
     render() {
         return (
-            <div className="row no-gutters">
-                <div className="col col-12">
+            <div className="my-contaiener">
+                <div className="my-header">
                     <Header />
                 </div>
-                <div className="col col-12">
-                    <div className="row no-gutters">
-                        <div className="col col-3"><Menu /></div>
-                        <div className="col col-9 content-panel"><HomeRoutes /></div>
-                    </div>
+                <div className="my-main">
+                    <div className="my-menu"><Menu /></div>
+                    <div className="my-content"><div className="content-panel"><HomeRoutes /></div></div>
                 </div>
-                <div className="col col-12">
+                <div className="my-footer">
                     <Footer />
                 </div>
             </div>
