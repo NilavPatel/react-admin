@@ -34,8 +34,8 @@ html, body, #root {
 }
 
 .my-header, .my-footer{
-  height:50px;
-  background-color: #f8f9fa;
+  background-color: #007bff;
+  color: #ffffff;
 }
 
 .login-panel .col-md-4 {

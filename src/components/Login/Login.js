@@ -14,7 +14,7 @@ export default class Login extends Component {
     onLogin(e) {
         e.preventDefault();
         var form = e.currentTarget;
-        if (form.UserName.value === 'admin' && form.Password.value === 'admin123') {
+        if (form.UserName.value === 'admin' && form.Password.value === 'password') {
             this.props.history.push("/Home");
             return;
         }
@@ -28,6 +28,10 @@ export default class Login extends Component {
             <div className="login-panel h-100">
                 <div className="row justify-content-center no-gutters d-flex align-items-center h-100">
                     <div className="col col-md-4">
+                        <div className="alert alert-success">
+                            <div>User name: admin</div>
+                            <div>Password: password</div>
+                        </div>
                         {this.state.isShowErrorMessage && <div className="alert-text">Invalid credentials</div>}
                         <Form onSubmit={this.onLogin}>
                             <Form.Group controlId="UserName" >
